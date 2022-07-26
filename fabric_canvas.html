@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fabric_canvas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/1346416f93.js" crossorigin="anonymous"></script>
+    <title>Document</title>    
+</head>
+<body>
+    <div class="container">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <input type="file" id="imgupload" onchange="loadFile(event)" accept="image/png, image/gif, image/jpeg" style="display:none"/> 
+              <button id="img" class="nav-link" href="#"> ---  Select Image  ---</button>
+            </li>
+            <li class="nav-item">
+              <button id="clr" class="nav-link" href="#">Clear</button>
+            </li>
+            <li class="nav-item">
+              <button id="rst" class="nav-link" href="#">Reset</button>
+            </li>
+            <li class="nav-item">
+              <button id="down" class="nav-link" href="#">Download</button>
+            </li>
+             <li class="nav-item">
+              <button id="undo" class="nav-link" href="#"><i class="fa-solid fa-rotate-left"></i></button>
+            </li>
+            <li class="nav-item">
+                <button id="redo" class="nav-link" href="#"><i class="fa-solid fa-rotate-right"></i></button>
+            </li>
+            <li class="nav-item">
+                <button id="cursor" class="nav-link" href="#">Deactivate Cursor</button>
+            </li>
+            <li class="nav-item">
+                <button id="del" class="nav-link" href="#">Delete Object</button>
+            </li>
+        </ul>
+    </div>
+    <div class="zoom_outer">
+        <div id="zoom">
+          <img id="output" >
+        </div>
+      </div>
+    <script src="fabric_canvas.js"></script>
+</body>
+</html>
